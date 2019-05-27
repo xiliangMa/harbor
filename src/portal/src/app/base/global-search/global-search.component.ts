@@ -64,7 +64,7 @@ export class GlobalSearchComponent implements OnInit, OnDestroy {
                 this.placeholderText = res;
             });
         } else {
-            this.translate.get('GLOBAL_SEARCH.PLACEHOLDER', {'param': 'Harbor'}).subscribe(res => {
+            this.translate.get('GLOBAL_SEARCH.PLACEHOLDER', {'param': ''}).subscribe(res => {
                 // Placeholder text
                 this.placeholderText = res;
             });

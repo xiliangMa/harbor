@@ -1,7 +1,7 @@
 {
     "APP_TITLE": {
-        "VMW_HARBOR": "Harbor",
-        "HARBOR": "Harbor",
+        "VMW_HARBOR": "镜像仓库",
+        "HARBOR": "镜像仓库",
         "VIC": "vSphere Integrated Containers",
         "MGMT": "Management",
         "REG": "Registry",
