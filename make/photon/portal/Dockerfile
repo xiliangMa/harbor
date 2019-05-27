@@ -7,10 +7,15 @@ COPY make/photon/portal/entrypoint.sh /
 COPY src/portal /portal_src
 COPY ./docs/swagger.yaml   /portal_src
 
+COPY src/portal/apt-src /etc/apt/sources.list
 WORKDIR /portal_src
 
 RUN npm install && \
     chmod u+x /entrypoint.sh
+
+#RUN apt-get update
+#RUN apt-get install -y ruby
+
 RUN /entrypoint.sh
 VOLUME ["/portal_src"]
 
@@ -28,7 +33,7 @@ VOLUME /var/cache/nginx /var/log/nginx /run
 
 COPY --from=nodeportal /build_dir/dist /usr/share/nginx/html
 COPY --from=nodeportal /build_dir/swagger.yaml /usr/share/nginx/html
-COPY --from=nodeportal /build_dir/swagger.json /usr/share/nginx/html
+#COPY --from=nodeportal /build_dir/swagger.json /usr/share/nginx/html
 
 COPY make/photon/portal/nginx.conf /etc/nginx/nginx.conf
 
