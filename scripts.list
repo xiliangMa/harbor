@@ -1,4 +1,5 @@
 
+#####  build portal
 
 docker build -f make/photon/portal/Dockerfile -t goharbor/harbor-portal:dev .
 
