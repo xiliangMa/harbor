@@ -87,3 +87,13 @@ body {
 .color-red {
     color: red;
 }
+
+.btn {
+    color: #fff;
+}
+.btn-primary .btn, .btn.btn-primary {
+    border-color: #627100 !important;
+    background-color: #627100 !important;
+    color: #fff;
+}
+

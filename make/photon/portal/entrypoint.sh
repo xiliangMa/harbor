@@ -1,15 +1,15 @@
 #!/bin/bash
 set -e
 
-cd /build_dir
-cp -r /portal_src/* .
+# cd /build_dir
+# cp -r /portal_src/* .
 ls -la
 
 # Update
-#ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' swagger.yaml>swagger.json
+#### ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))' swagger.yaml>swagger.json
+#### cat ./package.json
 
-#cat ./package.json
-npm install
+# npm install
 
 ## Build harbor-portal and link it
 npm run build_lib

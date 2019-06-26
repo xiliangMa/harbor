@@ -1,7 +1,7 @@
 {
-  "headerBgColor": "",
+  "headerBgColor": "#232326",
   "headerLogo": "",
-  "loginBgImg": "",
+  "loginBgImg": "images/loginbg.svg",
   "appTitle": "",
   "project": {
     "companyName": "",

@@ -1,7 +1,7 @@
 
 #####  build portal
 
-docker build -f make/photon/portal/Dockerfile -t goharbor/harbor-portal:dev .
+docker build -f make/photon/portal/Dockerfile -t goharbor/harbor-portal:v1.8.0 .
 
 
 

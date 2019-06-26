@@ -20,6 +20,16 @@ RUN /entrypoint.sh
 VOLUME ["/portal_src"]
 
 
+### ---- for debug modified ----
+WORKDIR /build_dir
+RUN cp -r /portal_src/* .
+RUN npm install
+
+WORKDIR /portal_src
+### ----< end debug modi ---
+
+
+
 FROM photon:2.0
 
 RUN tdnf install -y nginx >> /dev/null \
