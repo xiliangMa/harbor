@@ -46,10 +46,10 @@
 }
 .bg{
     position: absolute;
-    top: 60px; 
+    top: 60px;
     right: 0px;
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     background-size: cover;
 }
 
@@ -58,6 +58,7 @@
     .login {
         background:transparent;
     }
+    background: url("images/login-bg.svg") 21rem 0/100% no-repeat;
 }
 .login-oidc{
     margin-top: 50px;
