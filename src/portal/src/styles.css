@@ -94,6 +94,11 @@ body {
 .btn-primary .btn, .btn.btn-primary {
     border-color: #627100 !important;
     background-color: #627100 !important;
-    color: #fff;
+    color: #fff !important;
+}
+
+.btn:hover {
+    background-color: #A2AE44 !important;
+    color: #A2AE44 !important;
 }
 
